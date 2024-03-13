@@ -17,9 +17,17 @@ function GetData() {
     let completeLink = api+uuid;
     let data;
     fetch(completeLink, {
-      method: 'GET',
-      origin: 'play.kahoot.it',
-      
+      "headers": {
+        "accept": "application/json, text/plain, */*",
+        "accept-language": "en-US,en;q=0.9",
+        "content-type": 'application/json;charset=UTF-8'
+      },
+      "refferer": 'play.kahoot.it',
+      "referrerPolicy": "strict-origin-when-cross-origin",
+      "method": 'GET',
+      "mode": "cors"
+    }).then((response) => {
+      alert(response.text());
     });
   }
 }
