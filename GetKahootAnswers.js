@@ -31,4 +31,5 @@ function GetData() {
     });
   }
 }
+alert("Running...");
 GetData();
