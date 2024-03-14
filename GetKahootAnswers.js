@@ -9,7 +9,7 @@ function GetData() {
   let maxTries = 2;
   let uuid;
   let uuidValid = false;
-  for (let currentTry = 1; currentTry <= maxTries; currentTry++) {
+  for (currentTry = 1; currentTry <= 3; currentTry++) {
     let UUID = prompt("Enter quiz UUID (Not join number, quiz UUID (Should be in link bar on host's screen (may need to ask to see it))) TRY "+String(currentTry)+"/"+String(maxTries));
     if (testUUID(UUID)) { uuid = String(UUID); uuidValid = true; break; }
   }
