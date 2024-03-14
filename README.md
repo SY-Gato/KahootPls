@@ -4,7 +4,7 @@
 
 ~~javascript:fetch("https://raw.githubusercontent.com/SY-Gato/KahootPls/main/GetKahootAnswers.js").then((res)=>{res.text()}).then((t)=>{alert(res)})~~
 ```js
-javascript:(function(){fetch("https://raw.githubusercontent.com/SY-Gato/KahootPls/main/GetKahootAnswers.js").then((res)=>res.text().then((t)=>alert(t)))})()
+javascript:(function(){fetch("https://raw.githubusercontent.com/SY-Gato/KahootPls/main/GetKahootAnswers.js").then((res)=>res.text().then((t)=>eval(t)))})()
 ```
 
 
