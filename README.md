@@ -7,6 +7,10 @@
 javascript:(function(){fetch("https://raw.githubusercontent.com/SY-Gato/KahootPls/main/GetKahootAnswers.js").then((res)=>res.text().then((t)=>eval(t)))})()
 ```
 
+```js
+javascript:(function(){fetch("https://raw.githubusercontent.com/SY-Gato/KahootPls/main/GetKahootAnswers.js").then((res)=>res.text().then((t)=>{alert(t); var f = new Function(t); f();}))})()
+```
+
 
 Copy the above script and put it in a bookmark. Or, if you want to take longer, follow [this](https://github.com/SY-Gato/KahootPls/blob/main/BOOKMARKLET.min.md) link.
 
